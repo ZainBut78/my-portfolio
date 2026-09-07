@@ -136,14 +136,14 @@ export const skills = [
 
   // Row 3 — AI / automation stack
   { name: "n8n Workflows",     icon: "SiN8N",           color: "#EA4B71", row: 3 },
-  { name: "AI Agents",         icon: "SiOpenai",        color: "#f1f5f9", row: 3 },
+  { name: "AI Agents",         icon: "FaRobot",         color: "#f1f5f9", row: 3 },
   { name: "AI / ML Marketing", icon: "SiTensorflow",    color: "#FF6F00", row: 3 },
 
   // Row 4 — infra / DB / dev tools
   { name: "PostgreSQL",        icon: "SiPostgresql",    color: "#336791", row: 4 },
   { name: "Redis",             icon: "SiRedis",         color: "#DC382D", row: 4 },
   { name: "Docker",            icon: "SiDocker",        color: "#2496ED", row: 4 },
-  { name: "AWS",               icon: "SiAmazon",        color: "#FF9900", row: 4 },
+  { name: "AWS",               icon: "FaAws",           color: "#FF9900", row: 4 },
 ];
 
 /**

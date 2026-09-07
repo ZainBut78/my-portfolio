@@ -1,8 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import * as FaIcons from "react-icons/fa";
-import * as SiIcons from "react-icons/si";
+import { getIcon } from "../lib/icons";
 import { personal, socials, navLinks } from "../data/portfolioData";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -172,7 +171,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-wrap gap-2">
               {socials.map((s) => {
-                const Icon = FaIcons[s.icon] || SiIcons[s.icon];
+                const Icon = getIcon(s.icon);
                 return (
                   <a
                     key={s.name}

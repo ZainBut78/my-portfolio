@@ -2,8 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import emailjs from "@emailjs/browser";
-import * as FaIcons from "react-icons/fa";
-import * as SiIcons from "react-icons/si";
+import { getIcon } from "../lib/icons";
 import { socials, contactCaption } from "../data/portfolioData";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -242,8 +241,7 @@ function FormField({ label, name, type = "text", placeholder, textarea, required
 /* ---------- Channel card — icon + label with magnetic hover ---------- */
 function ChannelCard({ social }) {
   const ref = useRef(null);
-  const Icon =
-    FaIcons[social.icon] || SiIcons[social.icon] || null;
+  const Icon = getIcon(social.icon);
 
   const onMove = (e) => {
     const el = ref.current;

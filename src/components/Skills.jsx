@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import * as SiIcons from "react-icons/si";
+import { getIcon } from "../lib/icons";
 import { skills } from "../data/portfolioData";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -128,7 +128,7 @@ export default function Skills() {
      karta hai (rotateX/Y based on mouse position within chip) — 3D pop feel
 */
 function SkillChip({ skill, index }) {
-  const Icon = SiIcons[skill.icon];
+  const Icon = getIcon(skill.icon);
   const chipRef = useRef(null);
   const innerRef = useRef(null);
 
