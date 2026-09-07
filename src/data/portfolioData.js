@@ -170,7 +170,7 @@ export const projects = [
     description:
       "Complete production ride-hailing platform delivered for a Dubai-based transport company — driver + rider apps, dispatch logic, real-time tracking.",
     tech: ["React", "Node.js", "PostgreSQL", "Redis", "Docker"],
-    image: "/projects/placeholder-1.jpg",   // TODO: replace with real screenshot
+    image: "",   // TODO: /projects/uber-clone.jpg — screenshot public/projects/ mein drop karein
     demoUrl: "#",                            // TODO: real link
     codeUrl: "#",                            // TODO: real link
     featured: true,
@@ -180,7 +180,7 @@ export const projects = [
     description:
       "Full-stack e-commerce platform with AI product recommendations, smart search and automated marketing workflows.",
     tech: ["Next.js", "Python", "FastAPI", "PostgreSQL", "AI/ML"],
-    image: "/projects/placeholder-2.jpg",
+    image: "",   // TODO: /projects/ecommerce.jpg
     demoUrl: "#",
     codeUrl: "#",
     featured: true,
@@ -190,7 +190,7 @@ export const projects = [
     description:
       "Custom n8n pipelines connecting CRMs, payment gateways and AI agents — cutting manual ops time by ~70% for freelance clients.",
     tech: ["n8n", "Node.js", "AI Agents", "APIs"],
-    image: "/projects/placeholder-3.jpg",
+    image: "",   // TODO: /projects/n8n.jpg
     demoUrl: "#",
     codeUrl: "#",
     featured: false,
@@ -200,7 +200,7 @@ export const projects = [
     description:
       "Multi-tenant admin dashboard with granular role-based access, audit logging and real-time analytics widgets.",
     tech: ["Django", "React", "PostgreSQL", "Tailwind"],
-    image: "/projects/placeholder-4.jpg",
+    image: "",   // TODO: /projects/admin-portal.jpg
     demoUrl: "#",
     codeUrl: "#",
     featured: false,

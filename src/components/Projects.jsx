@@ -149,33 +149,31 @@ function ProjectCard({ project }) {
           className="absolute inset-0 pointer-events-none transition-[background] duration-200 rounded-3xl"
         />
 
-        {/* Image placeholder — user real image replace karega */}
+        {/* Image slot — real image ho to dikhayein, warna gradient placeholder */}
         <div className="relative aspect-video overflow-hidden">
-          <img
-            src={project.image}
-            alt={project.title}
-            className="absolute inset-0 w-full h-full object-cover"
-            onError={(e) => {
-              // Agar image na mile to gradient placeholder dikha do
-              e.currentTarget.style.display = "none";
-            }}
-            draggable={false}
-          />
-          {/* Fallback gradient placeholder — jab image na ho */}
-          <div
-            aria-hidden
-            className="absolute inset-0 flex items-center justify-center"
-            style={{
-              background:
-                "linear-gradient(135deg, rgba(56,189,248,0.2), rgba(168,85,247,0.15), rgba(236,72,153,0.15))",
-            }}
-          >
-            <div className="font-mono text-xs text-text-muted opacity-60 text-center px-4">
-              📷 preview
-              <br />
-              <span className="text-[10px]">{project.image}</span>
+          {project.image ? (
+            <img
+              src={project.image}
+              alt={project.title}
+              className="absolute inset-0 w-full h-full object-cover"
+              draggable={false}
+            />
+          ) : (
+            <div
+              aria-hidden
+              className="absolute inset-0 flex items-center justify-center"
+              style={{
+                background:
+                  "linear-gradient(135deg, rgba(56,189,248,0.2), rgba(168,85,247,0.15), rgba(236,72,153,0.15))",
+              }}
+            >
+              <div className="font-mono text-xs text-text-muted opacity-60 text-center px-4">
+                📷 preview
+                <br />
+                <span className="text-[10px]">coming soon</span>
+              </div>
             </div>
-          </div>
+          )}
           {/* Image overlay gradient for text readability */}
           <div
             aria-hidden
