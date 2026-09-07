@@ -166,15 +166,14 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* Download Resume button */}
+          {/* Download Resume button — clean download (no new tab) */}
           <div data-reveal className="mt-8 w-full md:flex md:justify-end">
             <CTAButton
               href={personal.resumeUrl}
               variant="primary"
               icon="⬇"
               label="Download Resume"
-              external
-              download
+              download="Zain-Butt-Resume.pdf"
             />
           </div>
         </div>

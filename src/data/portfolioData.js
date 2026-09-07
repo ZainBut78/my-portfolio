@@ -20,7 +20,7 @@ Specialized in building end-to-end solutions from concept to deployment — comb
 Comfortable working across the entire stack — from designing scalable database schemas and RESTful APIs, to deploying production applications with Docker, Nginx, and PM2. Looking to bring my problem-solving mindset, self-driven work ethic, and proven client-delivery track record to a full-time role where I can build products that create real business impact.`,
   location: "Pakistan",
   email: "zainbutt787899@gmail.com",
-  resumeUrl: "/resume.pdf",             // NOTE: public/resume.pdf mein file add karni hai
+  resumeUrl: "/Zain_Butt_Designer_Resume.pdf",  // public/Zain_Butt_Designer_Resume.pdf
   profilePhoto: "/hero-photo.png",      // Hero ka real photo (transparent PNG) — X-ray hover ke liye
   avatar: "/about-me.jpg",              // About section ka scroll-in avatar
 };
@@ -32,7 +32,7 @@ Comfortable working across the entire stack — from designing scalable database
 export const heroCTAs = [
   { label: "View Projects",    href: "#projects", variant: "primary", icon: "→"  },
   { label: "Hire Me",          href: "#contact",  variant: "primary", icon: "✦"  },
-  { label: "Download Resume",  href: "/resume.pdf", variant: "ghost", icon: "⬇",  download: true, external: true },
+  { label: "Download Resume",  href: personal.resumeUrl, variant: "ghost", icon: "⬇", download: "Zain-Butt-Resume.pdf" },
   { label: "Contact Me",       href: "#contact",  variant: "ghost",   icon: "✉"  },
 ];
 
